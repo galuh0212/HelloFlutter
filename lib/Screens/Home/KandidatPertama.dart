@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:helloflutter/KandidatKedua.dart';
+import 'package:helloflutter/Screens/Home/Visi1.dart';
+import 'package:helloflutter/Screens/Home/Visi2.dart';
+import 'package:helloflutter/Screens/Home/Visi3.dart';
 
 class KandidatPertama extends StatelessWidget {
   @override
@@ -39,7 +41,11 @@ class KandidatPertama extends StatelessWidget {
                                   color: Colors.purpleAccent,
                                   fontWeight: FontWeight.bold),
                             ),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => Visi1()));
+                            }
                           ),
                         ],
                       ),
@@ -68,7 +74,11 @@ class KandidatPertama extends StatelessWidget {
                                   color: Colors.purpleAccent,
                                   fontWeight: FontWeight.bold),
                             ),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => Visi2()));
+                            },
                           ),
                         ],
                       ),
@@ -97,7 +107,11 @@ class KandidatPertama extends StatelessWidget {
                                   color: Colors.purpleAccent,
                                   fontWeight: FontWeight.bold),
                             ),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => Visi3()));
+                            },
                           ),
                         ],
                       ),
